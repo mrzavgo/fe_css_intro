@@ -1,0 +1,70 @@
+:root {
+  --table-radius: 8px;
+}
+
+table {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  border-collapse: separate;
+}
+
+thead td:first-child {
+  border-top-left-radius: var(--table-radius);
+  background-color:#abcdef;
+  color: white;
+}
+
+thead td:nth-child(2) {
+  color: white;
+  background-color:#00bfff;
+}
+
+thead td:nth-child(3) {
+  background-color:#19b2e6;
+  color: white;
+}
+
+thead td:nth-child(4) {
+  background-color:#0099cc;
+  color: white;
+}
+
+thead td:last-child {
+  border-top-right-radius: var(--table-radius);
+  background-color:#423189;
+  color: white;
+}
+
+tbody > tr:nth-child(odd) > td:nth-child(odd) {
+  background-color: #dbdbdb;
+}
+
+tbody > tr:nth-child(even) > td:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+tbody > tr:nth-child(odd) > td:nth-child(even)
+  tbody > tr:nth-child(even) > td:nth-child(odd) { 
+  background-color: #e7e7e7;
+}
+
+tfoot td:first-child {
+  border-bottom-left-radius: var(--table-radius);
+}
+
+tfoot td:nth-child(2n+1) {
+  background-color:#dbdbdb;
+}
+
+tfoot td:last-child {
+  border-bottom-right-radius: var(--table-radius);
+}
+
+td {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+
+ 
